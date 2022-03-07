@@ -360,6 +360,7 @@ body {
 
 .telegram_chat .buttons .input {
   width: 80%;
+  color: azure;
   outline: 0;
   height: 35px;
   border-radius: 10px;
