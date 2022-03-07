@@ -43,3 +43,14 @@
         z-index: 5; 
     }
 }
+
+@mixin input {
+    width: 80%;
+    color: azure;
+    outline: 0;
+    height: 35px;
+    border-radius: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+    background-color: rgba(0, 0, 0, 0.589);
+}
