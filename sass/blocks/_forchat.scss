@@ -1,0 +1,136 @@
+.telegram_chat {
+    background-image: url(../images/bgjpg.jpg);
+    max-width: 500px;
+    min-height: 800px;
+    margin: 0 auto;
+    margin-top: 30px;
+    
+    .telegram_chat__header{
+        padding: 0 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        background-color: rgb(58, 57, 57);
+
+        img{
+            border-radius: 50%;
+            margin-top: 5px;
+        }
+    }
+    .back{
+        color: $blue;
+        font-size: 20px;
+        font-weight: 500;
+        span{
+            font-size: 22px;
+        }
+    }
+    .telegram_chat__header__user{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+
+    .telegram_chat__header__user p{
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 0px;
+    }
+    span{
+        color: $blue;
+        font-size: 15px;
+        font-weight: 500;
+        text-align: right;
+    }
+    .telegram_chat__talk{
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-content: flex-end;
+        margin-bottom: 60px;
+        
+        .telegram_chat__talk__left , .telegram_chat__talk__right{
+            @include all_chat
+
+        }
+        .telegram_chat__talk__left{
+            @include left_chat
+        }
+        .telegram_chat__talk__right{
+            @include right_chat
+        }
+        
+    }
+
+    .buttons{
+        display: flex;
+        // justify-content:space-between;
+        padding: 0 20px;
+        align-items: center;
+        padding: 10px 0;
+        background-color: rgb(58, 57, 57);
+
+        .send__docs{
+            margin-right: 10px;
+
+        }
+        .input{
+            // max-width: 30px;
+            width: 80%;
+            outline: 0;
+            height: 35px;
+            border-radius: 10px;
+            margin-right: 10px;
+            padding-left: 10px;
+            background-color: rgba(0, 0, 0, 0.589);
+        }    
+
+
+    }
+
+    .keyboard{
+        max-width: 500px;
+        img{
+            width: 100%;
+        }
+    }
+}    
+
+
+
+
+
+
+@media only screen and (max-width: 500px) {
+    .keyboard{
+        img{
+            max-height: 230px;
+        }
+    }
+    .telegram_chat{
+        min-height: 700px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .keyboard{
+        img{
+            max-height: 200px;
+        }
+    }
+    .telegram_chat{
+        min-height: 550px;
+    }
+}  
+
+@media only screen and (max-width: 350px) {
+    .keyboard{
+        img{
+            max-height: 180px;
+        }
+    }
+    .telegram_chat{
+        min-height: 450px;
+    }
+} 
